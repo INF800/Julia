@@ -35,7 +35,7 @@ print("type of div : ", typeof(f), "\n")
 
 # conversion
 print("convert float to int: ", convert(Int64, 2.0), "\n") # 2.5 gives err
-print("convert int to float: ", convert(Float64, 2), "\n")
+print("coxnvert int to float: ", convert(Float64, 2), "\n")
 print("convert rational to float: ", convert(Float32, 2//4), "\n")
 println("convert to float to rational: ", convert(Rational, 0.25))
 
