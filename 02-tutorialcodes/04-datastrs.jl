@@ -1,3 +1,4 @@
+#=
 function printHead(s="")
     println("====================================================")
     println(s)
@@ -12,6 +13,11 @@ function print_mat(mat, head="")
     println("++++++++++++++++++++++++++++")
 
 end
+=#
+
+include("utils.jl")
+import . utilFns.printHead
+import . utilFns.print_mat
 
 #=================
 ARRAYS
@@ -41,7 +47,7 @@ println("type  of c: ", typeof(c), "dims: ", size(b)) # Arrray{Float, : } 1=col 
 println("type  of x: ", typeof(x), "dims: ", size(x)) # Arrray{Float, : } 1=col 2=row
 println("type  of b: ", typeof(b), "dims: ", size(c))
 =#
-append!(a , b)
+#append!(a , b)
 
 float_vec = Float32[1, 2.3]
 println("float_vec: ", float_vec)
